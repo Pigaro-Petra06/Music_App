@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>All Genre Page</h1>
+<p>Genre Registered in the Media:</p>
+<ul>
+    {% for genre in genre %}
+    <li><strong>{{ genre }}</strong></li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
+{% block title %}
+<title>List of Genre</title>
+{% endblock %}
