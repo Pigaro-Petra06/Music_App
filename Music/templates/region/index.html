@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>All Region Page</h1>
+<p>Region Registered in the Media:</p>
+<ul>
+    {% for region in region %}
+    <li><strong>{{ region }}</strong></li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
+{% block title %}
+<title>List of Region</title>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>All Song Maker Page</h1>
+<p>Song Maker Registered in the Media:</p>
+<ul>
+    {% for songmaker in songmaker %}
+    <li><strong>{{ songmaker }} </strong> - <a href="{% url 'songmaker_edit' songmaker.id %}">Edit</a> - <a href="{% url 'songmaker_delete' songmaker.id %}">Delete</a></li>
+    {% endfor %}
+</ul>
+<p><a href="{% url 'songmaker_add' %}">Add</a></a></p>
+{% endblock %}
+
+{% block title %}
+<title>List of Song Maker</title>
+{% endblock %}

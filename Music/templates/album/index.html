@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>All Album Page</h1>
+<p>Album Registered in the Media:</p>
+<ul>
+    {% for album in album %}
+    <li><strong>{{ album }}</strong> - <a href="{% url 'album_edit' album.id %}">Edit</a> - <a href="{% url 'album_delete' album.id %}">Delete</a></li>
+    {% endfor %}
+</ul>
+<p>
+    <a href="{% url 'album_add' %}">Add Album</a>
+</p>
+{% endblock %}
+
+{% block title %}
+<title>List of Genre</title>
+{% endblock %}

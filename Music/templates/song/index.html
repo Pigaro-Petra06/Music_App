@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>All Songs Page</h1>
+<p>Songs Registered in the Media:</p>
+<ul>
+    {% for song in songs %}
+    <li><strong>{{ song.song }}</strong>, ({{ song.description }}), ({{ song.region }}) - <a href="{% url 'song_edit' song.id %}">Edit</a> - <a href="{% url 'song_delete' song.id %}">Delete</a></li>
+    {% endfor %}
+</ul>
+<p>
+    <a href="{% url 'song_add' %}">Add Song</a>
+</p>
+{% endblock %}
+
+{% block title %}
+<title>List of Songs</title>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Home Page</h1>
+<h3>Welcome to Our Website</h3>
+<p>The media has Following record Counts</p>
+<ul>
+    <li><strong>Songs:</strong> {{ num_songs }}</li>
+    <li><strong>SongMakers:</strong> {{ num_songmaker }}</li>
+    <li><strong>Genre:</strong> {{ num_genre }}</li>
+    <li><strong>Published Year:</strong> {{ num_year }}</li>
+    <li><strong>Album:</strong> {{ num_album }}</li>
+    <li><strong>Region:</strong> {{ num_region }}</li>
+</ul>
+{% endblock %}
+{% block title %}
+<title>Music Media</title>
+{% endblock %}

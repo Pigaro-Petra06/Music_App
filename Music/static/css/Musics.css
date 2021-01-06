@@ -1,0 +1,13 @@
+.row {
+    margin-right: -15px;
+    margin-left: 15px;
+}
+
+body {
+    background:url("https://previews.123rf.com/images/fyuriy/fyuriy2004/fyuriy200400052/145802089-colorful-music-background-music-wave-player-jpeg-illustration-rainbow-equalizer-element-.jpg");
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}

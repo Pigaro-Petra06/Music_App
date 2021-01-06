@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>All Published Year Page</h1>
+<p>Published Year Registered in the Media:</p>
+<ul>
+    {% for year in year %}
+    <li><strong>{{ year }}</strong></li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
+{% block title %}
+<title>List of Year</title>
+{% endblock %}
